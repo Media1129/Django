@@ -1,3 +1,28 @@
-<h1>Hello World</h1>
-{{request.user}}
-<p>This is a template</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>I come from template!!</title>
+        <style>
+            body {
+               background-color: lightyellow;
+            }
+            em {
+                color: LightSeaGreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <em>{{ current_time }}</em>
+        <h3>use the template flag</h3>
+        {% for post in post_list %}
+            <div>
+            {{ post.title }}
+            {{ post.description }}
+            {{ post.summary }}
+            {{ post.featured }}
+            </div>
+        {% endfor %}
+        
+    </body>
+</html>
