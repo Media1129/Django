@@ -83,19 +83,19 @@ WSGI_APPLICATION = 'Demo.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
-# DATABASES = {
-#     'default':{
-#         'ENGINE':'django.db.backends.mysql',
-#         'NAME':'blog_data',
-#         'USER':'monty',
-#         'PASSWORD':'arraypointer',
-#         'HOST':'140.116.103.200',
-#         'PORT':'3306',
-#     },
-#     'OPTIONS':{
-#         "init_command":"SET foreign_key_checks = 0;",
-#     }
-# }
+DATABASES = {
+    'default':{
+        'ENGINE':'django.db.backends.mysql',
+        'NAME':'blog_data',
+        'USER':'monty',
+        'PASSWORD':'arraypointer',
+        'HOST':'140.116.103.200',
+        'PORT':'3306',
+    },
+    'OPTIONS':{
+        "init_command":"SET foreign_key_checks = 0;",
+    }
+}
 
 
 # Password validation
