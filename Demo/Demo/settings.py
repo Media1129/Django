@@ -25,7 +25,9 @@ SECRET_KEY = 'g@*9bq@05hg^sbb3f65b_ewfq38l!ctn3#%c$k2ldb00vf#s*p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
+#允許連近來的ip設為全部
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -75,12 +77,25 @@ WSGI_APPLICATION = 'Demo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+# DATABASES = {
+#     'default':{
+#         'ENGINE':'django.db.backends.mysql',
+#         'NAME':'blog_data',
+#         'USER':'monty',
+#         'PASSWORD':'arraypointer',
+#         'HOST':'140.116.103.200',
+#         'PORT':'3306',
+#     },
+#     'OPTIONS':{
+#         "init_command":"SET foreign_key_checks = 0;",
+#     }
+# }
 
 
 # Password validation

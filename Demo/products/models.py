@@ -1,9 +1,16 @@
 from django.db import models
-
-# Create your models here.
-class Product(models.Model): #繼承models內建的Model
-    title       = models.CharField(max_length=120)
-    description = models.TextField(blank=True, null=True)
-    # price       = models.DecimalField(decimal_places=2,max_digits=10000)
-    summary     = models.TextField()
-    featured    = models.BooleanField() #blank 代表可以是空白的嗎 null代表database可以存空白嗎
+# class User(models.Model):
+#     id = models.AutoField(primary_key=True)
+#     name = models.CharField(max_length=50)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     updated_at = models.DateTimeField(auto_now=True)
+#     class Meta:
+#         db_table = 'user'
+# class UserInfo(models.Model):
+#     id = models.AutoField(primary_key=True)
+#     user_id = models.ForeignKey(User, on_delete=models.CASCADE, db_column='user_id')
+#     age = models.FloatField()
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     updated_at = models.DateTimeField(auto_now=True)
+#     class Meta:
+#         db_table = 'userinfo'
