@@ -15,7 +15,7 @@ def contact_view(request,*args, **kwargs):
     return render(request,"base.html",{})
 
 def createUser_view(request):
-    u = User.objects.create(name="lisa")
+    u = User.objects.create(name="testnew")
     # u.save()
     ui = UserInfo.objects.create(user_id=u, age=23)
     # ui.save()
