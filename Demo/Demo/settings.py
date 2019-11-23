@@ -27,7 +27,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 #允許連近來的ip設為全部
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['140.116.103.200']
 
 
 # Application definition
